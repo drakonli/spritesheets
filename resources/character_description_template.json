@@ -1,0 +1,96 @@
+{
+  "character_id": "",
+  "one_line_summary": "",
+  "art_style": {
+    "genre": "",
+    "dimension": "2D",
+    "line_style": "",
+    "shading_style": "",
+    "texture_detail": "",
+    "camera_type": "",
+    "default_view": "",
+    "default_scale": "",
+    "background_rule": ""
+  },
+  "body_base": {
+    "species": "",
+    "apparent_age": "",
+    "gender_presentation": "",
+    "body_type": "",
+    "height_proportion": "",
+    "overall_silhouette_keywords": []
+  },
+  "head_and_face": {
+    "head_shape": "",
+    "skin_color": "",
+    "eye_shape": "",
+    "eye_size": "",
+    "eye_color": "",
+    "eyebrows": "",
+    "nose": "",
+    "mouth_default": "",
+    "other_facial_features": []
+  },
+  "hair": {
+    "hair_color": "",
+    "hair_length": "",
+    "hair_style": "",
+    "hair_volume": "",
+    "special_details": []
+  },
+  "outfit": {
+    "torso": {
+      "item_type": "",
+      "colors": [],
+      "patterns": [],
+      "key_details": []
+    },
+    "legs": {
+      "item_type": "",
+      "colors": [],
+      "patterns": [],
+      "key_details": []
+    },
+    "feet": {
+      "item_type": "",
+      "colors": [],
+      "key_details": []
+    },
+    "hands": {
+      "gloves_type": "",
+      "colors": [],
+      "key_details": []
+    },
+    "accessories": [
+      {
+        "name": "",
+        "position_on_body": "",
+        "colors": [],
+        "details": []
+      }
+    ]
+  },
+  "equipment_and_props": [
+    {
+      "name": "",
+      "count": 0,
+      "typical_position": "",
+      "colors": [],
+      "details": []
+    }
+  ],
+  "color_palette": {
+    "primary_colors": [],
+    "secondary_colors": [],
+    "neutral_colors": [],
+    "color_rules": []
+  },
+  "rendering_constraints": {
+    "lineart_color": "",
+    "anti_aliasing": "",
+    "shadow_rule": "",
+    "highlight_rule": "",
+    "lighting_direction": "",
+    "do_not_change_between_frames": []
+  }
+}
