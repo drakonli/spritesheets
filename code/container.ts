@@ -1,6 +1,8 @@
 import OpenAI from "openai";
+import type { CharacterImageDescriberApi } from "./character-image-describer.js";
 import { CharacterImageDescriber } from "./character-image-describer.js";
-import { CharacterImageGenerator } from "./character-image-generator.js";
+import { CachingCharacterImageDescriberProxy } from "./character-image-describer-proxy.js";
+import { CharacterVariantGenerator } from "./character-variant-generator.js";
 
 export class AppContainer {
   private openaiInstance?: OpenAI;
@@ -22,15 +24,15 @@ export class AppContainer {
     return this.openaiInstance;
   }
 
-  characterImageGenerator(): CharacterImageGenerator {
-    return new CharacterImageGenerator(this.openai());
+  characterVariantGenerator(): CharacterVariantGenerator {
+    return new CharacterVariantGenerator(this.openai());
   }
 
-  characterImageDescriber(): CharacterImageDescriber {
-    return new CharacterImageDescriber(
-      this.openai(),  
-      new URL("../resources/character_description_template.json", import.meta.url).pathname, 
-      new URL("../resources/prompts/character_description_v1.json", import.meta.url).pathname
-    );
+  characterImageDescriber(): CharacterImageDescriberApi {
+    const templatePath = new URL("../resources/character_description_template.json", import.meta.url).pathname;
+    const promptPath = new URL("../resources/prompts/character_description_v1.json", import.meta.url).pathname;
+
+    const describer = new CharacterImageDescriber(this.openai(), templatePath, promptPath);
+    return new CachingCharacterImageDescriberProxy(describer);
   }
 }

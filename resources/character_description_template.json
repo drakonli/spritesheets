@@ -1,6 +1,23 @@
 {
   "character_id": "",
   "one_line_summary": "",
+  "pose": {
+    "overall_pose": "",
+    "action": "",
+    "motion_state": "",
+    "is_airborne": "",
+    "movement_direction": "",
+    "speed_or_intensity": "",
+    "ground_contact_points": [],
+    "weight_shift_and_balance": "",
+    "body_orientation": "",
+    "head_orientation": "",
+    "gaze_direction": "",
+    "arm_positions": "",
+    "leg_positions": "",
+    "facial_expression": "",
+    "camera_movement_or_zoom": ""
+  },
   "art_style": {
     "genre": "",
     "dimension": "2D",

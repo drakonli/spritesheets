@@ -1,5 +1,8 @@
 {
   "type": "module",
+  "scripts": {
+    "cache:clear:describer": "tsx executors/clear-character-image-describer-cache.ts"
+  },
   "dependencies": {
     "dotenv": "^17.2.3",
     "openai": "^6.9.1"
