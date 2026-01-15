@@ -1,7 +1,9 @@
 {
   "type": "module",
   "scripts": {
-    "cache:clear:describer": "tsx executors/clear-character-image-describer-cache.ts"
+    "cache:clear:describe": "npm run cache:clear:describer",
+    "cache:clear:describer": "tsx executors/clear-character-image-describer-cache.ts",
+    "images:jump-keyframes": "tsx executors/generate-jump-keyframes.ts"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
